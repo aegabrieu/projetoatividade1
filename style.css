@@ -1,0 +1,280 @@
+:root{
+    --cor-rosa: #9e2b31;
+    --cor-letra-header: #FFFFFF;
+    --fonte-principal: 'Arial', sans-serif;
+    --sombra-letra: 0px 0px 3px #4a4747;
+}
+html{
+    font-family: var(--fonte-principal);
+}
+header{
+    background-color: var(--cor-rosa);
+    color: var(--cor-letra-header);
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 4em 2em;
+    align-items: center;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 19px;
+}
+.img-logo{
+    width: 20%;
+}
+.header-botao{
+    border: 3px solid;
+    border-radius: 4px;
+    padding: 0.7em 1.5em;
+}
+.header-botao-link{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-letra-header);
+}
+.header-botao:hover{
+    background-color: var(--cor-letra-header);
+    cursor: pointer;
+}
+.header-botao:hover>.header-botao-link{
+    color: var(--cor-rosa);
+}
+.elementos-content{
+    margin: 0 0 0 4em;
+}
+.header-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.titulo-principal{
+    font-size: 52px;
+    font-weight: bold;
+    margin: 1em 0;
+    text-shadow: var(--sombra-letra);
+}
+.texto-principal{
+    text-shadow: var(--sombra-letra);
+}
+.botoes{
+    display: flex;
+}
+.baixo{
+    margin: 2em 1em;
+}
+.foto-celular{
+    width: 40vw;
+}
+
+
+/* -------------- BODY AQUI ---------------*/
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-body-pqn{
+    color: var(--cor-rosa);
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 5em;
+    margin-bottom: 0.5em;
+}
+.titulo-body-grande{
+    font-size: 29px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0 32vh;
+}
+.titulo-desc{
+    color: #7b7676;
+    padding: 0 32vw;
+    text-align: center;
+}
+
+/*CARDS*/
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-principal{
+    width: 22.22%;
+    margin: 1em;
+    background: var(--cor-rosa);
+    padding: 1em;
+    border-radius: 6px;
+}
+.card-titulo{
+    margin: 0.5em 0.5em 1em 0.5em;
+}
+.card-desc{
+    margin: 0.5em;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+
+/*-----FOOTER-----*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-rosa);
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-letra-header);
+    margin: 6em 0 0;
+    font-weight: 600;
+}
+.titulo-footer{
+    font-size: 32px;
+    margin: 2em;
+    text-align: center;
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5em;
+}
+.container-itens{
+    display: flex;
+    margin: 0 0 4em 0;
+}
+.footer-item{
+    font-size: 32px;
+}
+.footer-item-desc{
+    font-size: 12px;
+}
+
+
+/*VERSAO TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header{
+        padding: 2em 2em 4em 2em;
+    }
+    .titulo-principal{
+        text-align: center;
+        font-size: 32px;
+    }
+    .texto-principal{
+        text-align: center;
+        padding: 0 4em;
+    }
+    .titulo-body-grande {
+        padding: 0 0;
+    }
+    .elementos-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    .img-logo{
+        width: 30%;
+    }   
+    .titulo-logo{
+        font-size: 28px;
+    }
+    .foto-celular {
+        width: 85vw;
+    }
+    .header-botao{
+        font-size: 20px;
+    }
+    .titulo-body-grande{
+        font-size: 25px;
+    }
+    .titulo-desc{
+        padding: 0px 7vw;
+        margin-bottom: 2.5em;
+    }
+    .card-principal{
+        width: 30%;
+    }
+    .titulo-footer {
+        font-size: 27px;
+        margin: 3em 1em 1em;
+        text-align: center;
+    }
+  }
+
+  /*versao celular*/
+  @media (max-width: 767px) {
+    .header-content {
+        flex-direction: column;
+    }
+    #botao-promo{
+        display: none;
+    }
+    .header-logo{
+        font-size: 25px;
+    }
+    .elementos-content{
+        margin: 0 0 0 0;
+    }
+    .titulo-principal{
+        font-size: 23px;
+        text-align: center;
+    }
+    .texto-principal{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    .botoes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-botao{
+        width: 25%;
+    }
+    .baixo{
+        margin: 0;
+        margin-bottom: 0.5em;
+    }
+    .foto-celular {
+        width: 100vw;
+    }
+    .titulo-body-grande {
+        font-size: 19px;
+        font-weight: 800;
+        text-align: center;
+        margin: 0.5em;
+        padding: 0 0;
+    }
+    .card-principal {
+        width: 70%;
+    }
+    .titulo-desc {
+        padding: 0 7vw;
+    }
+    .container-itens {
+        display: flex;
+        margin: 0 0 4em 0;
+        flex-direction: column;
+    }
+    .card-footer {
+        margin: 1em 5em;
+    }
+    .titulo-footer {
+        font-size: 20px;
+        margin: 2em;
+        text-align: center;
+    }
+  }
